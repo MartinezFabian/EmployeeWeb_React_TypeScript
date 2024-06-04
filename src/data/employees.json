@@ -1,0 +1,182 @@
+[
+  {
+    "id": "1",
+    "lastName": "García",
+    "firstName": "Luis",
+    "position": "Manager",
+    "department": "Departamento de IT",
+    "dateOfBirth": "1985-03-12",
+    "contact": "luis.garcia@mail.com"
+  },
+  {
+    "id": "2",
+    "lastName": "Martínez",
+    "firstName": "Ana",
+    "position": "Developer",
+    "department": "Departamento de Desarrollo",
+    "dateOfBirth": "1990-07-24",
+    "contact": "ana.martinez@mail.com"
+  },
+  {
+    "id": "3",
+    "lastName": "López",
+    "firstName": "Carlos",
+    "position": "Tester",
+    "department": "Departamento de QA",
+    "dateOfBirth": "1988-11-02",
+    "contact": "carlos.lopez@mail.com"
+  },
+  {
+    "id": "4",
+    "lastName": "Fernández",
+    "firstName": "María",
+    "position": "HR Specialist",
+    "department": "Recursos Humanos",
+    "dateOfBirth": "1992-05-18",
+    "contact": "maria.fernandez@mail.com"
+  },
+  {
+    "id": "5",
+    "lastName": "Sánchez",
+    "firstName": "Jorge",
+    "position": "Accountant",
+    "department": "Departamento de Contabilidad",
+    "dateOfBirth": "1987-09-30",
+    "contact": "jorge.sanchez@mail.com"
+  },
+  {
+    "id": "6",
+    "lastName": "Pérez",
+    "firstName": "Lucía",
+    "position": "Product Owner",
+    "department": "Departamento de Producto",
+    "dateOfBirth": "1991-03-15",
+    "contact": "lucia.perez@mail.com"
+  },
+  {
+    "id": "7",
+    "lastName": "Gómez",
+    "firstName": "David",
+    "position": "Scrum Master",
+    "department": "Departamento de Desarrollo",
+    "dateOfBirth": "1986-12-07",
+    "contact": "david.gomez@mail.com"
+  },
+  {
+    "id": "8",
+    "lastName": "Díaz",
+    "firstName": "Sofía",
+    "position": "Developer",
+    "department": "Departamento de Desarrollo",
+    "dateOfBirth": "1993-08-22",
+    "contact": "sofia.diaz@mail.com"
+  },
+  {
+    "id": "9",
+    "lastName": "Morales",
+    "firstName": "Miguel",
+    "position": "DevOps Engineer",
+    "department": "Departamento de IT",
+    "dateOfBirth": "1984-06-10",
+    "contact": "miguel.morales@mail.com"
+  },
+  {
+    "id": "10",
+    "lastName": "Vega",
+    "firstName": "Laura",
+    "position": "Designer",
+    "department": "Departamento de Diseño",
+    "dateOfBirth": "1989-01-26",
+    "contact": "laura.vega@mail.com"
+  },
+  {
+    "id": "11",
+    "lastName": "Torres",
+    "firstName": "Andrés",
+    "position": "System Administrator",
+    "department": "Departamento de IT",
+    "dateOfBirth": "1983-04-14",
+    "contact": "andres.torres@mail.com"
+  },
+  {
+    "id": "12",
+    "lastName": "Ramírez",
+    "firstName": "Elena",
+    "position": "Marketing Specialist",
+    "department": "Departamento de Marketing",
+    "dateOfBirth": "1994-02-08",
+    "contact": "elena.ramirez@mail.com"
+  },
+  {
+    "id": "13",
+    "lastName": "Castro",
+    "firstName": "Pablo",
+    "position": "Sales Manager",
+    "department": "Departamento de Ventas",
+    "dateOfBirth": "1982-07-21",
+    "contact": "pablo.castro@mail.com"
+  },
+  {
+    "id": "14",
+    "lastName": "Reyes",
+    "firstName": "Marta",
+    "position": "Business Analyst",
+    "department": "Departamento de Análisis",
+    "dateOfBirth": "1987-11-12",
+    "contact": "marta.reyes@mail.com"
+  },
+  {
+    "id": "15",
+    "lastName": "Rojas",
+    "firstName": "Iván",
+    "position": "Support Engineer",
+    "department": "Departamento de Soporte",
+    "dateOfBirth": "1990-10-30",
+    "contact": "ivan.rojas@mail.com"
+  },
+  {
+    "id": "16",
+    "lastName": "Flores",
+    "firstName": "Natalia",
+    "position": "HR Manager",
+    "department": "Recursos Humanos",
+    "dateOfBirth": "1985-12-19",
+    "contact": "natalia.flores@mail.com"
+  },
+  {
+    "id": "17",
+    "lastName": "Herrera",
+    "firstName": "Sergio",
+    "position": "Network Engineer",
+    "department": "Departamento de IT",
+    "dateOfBirth": "1988-03-05",
+    "contact": "sergio.herrera@mail.com"
+  },
+  {
+    "id": "18",
+    "lastName": "Mendoza",
+    "firstName": "Adriana",
+    "position": "Content Writer",
+    "department": "Departamento de Marketing",
+    "dateOfBirth": "1991-11-21",
+    "contact": "adriana.mendoza@mail.com"
+  },
+  {
+    "id": "19",
+    "lastName": "Ramos",
+    "firstName": "Oscar",
+    "position": "Database Administrator",
+    "department": "Departamento de IT",
+    "dateOfBirth": "1986-06-17",
+    "contact": "oscar.ramos@mail.com"
+  },
+  {
+    "id": "20",
+    "lastName": "Suárez",
+    "firstName": "Isabel",
+    "position": "UX Researcher",
+    "department": "Departamento de Diseño",
+    "dateOfBirth": "1989-09-28",
+    "contact": "isabel.suarez@mail.com"
+  }
+]
