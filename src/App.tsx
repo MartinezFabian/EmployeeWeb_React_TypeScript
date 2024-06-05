@@ -1,13 +1,16 @@
 import React from 'react';
+import Home from './pages/Home';
+import Navbar from './components/Navbar';
 
 interface AppProps {
   // define your props here
 }
 
-const App: React.FC<AppProps> = ({}) => {
+const App: React.FC<AppProps> = () => {
   return (
     <>
-      <h1>Hola mundo</h1>
+      <Navbar />
+      <Home />
     </>
   );
 };
