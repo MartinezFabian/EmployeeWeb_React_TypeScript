@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
+import { Checkbox } from '@mui/material';
 
 const employeesTest = [
   {
@@ -42,7 +43,13 @@ const employeesTest = [
 ];
 
 const columns: GridColDef[] = [
-  { field: 'id', headerName: 'ID', width: 70 },
+  {
+    field: 'actions',
+    type: 'actions',
+    sortable: false,
+    width: 50,
+    renderCell: () => <Checkbox size="small" />,
+  },
   { field: 'lastName', headerName: 'Apellido', width: 130 },
   { field: 'firstName', headerName: 'Nombre', width: 130 },
   { field: 'position', headerName: 'Puesto', width: 130 },
@@ -58,13 +65,20 @@ interface EmployeeTableProps {
 const EmployeeTable: React.FC<EmployeeTableProps> = () => {
   return (
     <DataGrid
-      checkboxSelection
       rows={employeesTest}
       columns={columns}
+      disableColumnResize
       disableColumnSelector
       disableRowSelectionOnClick
       autoHeight
-      pageSizeOptions={[5, 10]}
+      initialState={{
+        pagination: {
+          paginationModel: {
+            pageSize: 8,
+          },
+        },
+      }}
+      pageSizeOptions={[8]}
       getRowId={(row) => row.id}
     />
   );

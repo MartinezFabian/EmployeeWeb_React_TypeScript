@@ -17,11 +17,9 @@ const App: React.FC<AppProps> = () => {
         sx={{
           overflow: 'hidden',
           flexGrow: 1,
-          p: {
-            xs: 3, // for mobile
-            md: 5, // for desktop
-            lg: 10, // for large desktop
-          },
+          maxWidth: '1200px',
+          margin: '60px auto 0 auto',
+          padding: '20px',
         }}
       >
         <Home />
