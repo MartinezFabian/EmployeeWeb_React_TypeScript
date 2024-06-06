@@ -1,9 +1,10 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import EmployeesState from '../../models/EmployeesState';
 import Employee from '../../models/Employee';
+import { fetchEmployees } from '../thunks/fetchEmployees';
 
 const initialState: EmployeesState = {
-  employees: [],
+  employeesList: [],
   favorites: [],
   isLoading: false,
   errorMessage: '',
@@ -12,22 +13,23 @@ const initialState: EmployeesState = {
 export const employeesSlice = createSlice({
   name: 'employees',
   initialState: initialState,
-  reducers: {
-    fetchEmployeesRequest: (state) => {
-      state.isLoading = true;
-      state.errorMessage = '';
-    },
-    fetchEmployeesSuccess: (state, action: PayloadAction<Employee[]>) => {
-      state.isLoading = false;
-      state.errorMessage = '';
-      state.employees = action.payload;
-    },
-    fetchEmployeesFailure: (state, action: PayloadAction<string>) => {
-      state.isLoading = false;
-      state.errorMessage = action.payload;
-    },
+  reducers: {},
+  extraReducers: (builder) => {
+    builder
+      .addCase(fetchEmployees.pending, (state) => {
+        state.isLoading = true;
+        state.errorMessage = '';
+      })
+      .addCase(fetchEmployees.fulfilled, (state, action: PayloadAction<Employee[]>) => {
+        state.isLoading = false;
+        state.errorMessage = '';
+        state.employeesList = action.payload;
+      })
+      .addCase(fetchEmployees.rejected, (state, action) => {
+        state.isLoading = false;
+        state.errorMessage = action.payload as string;
+      });
   },
 });
 
-export const { fetchEmployeesRequest, fetchEmployeesSuccess, fetchEmployeesFailure } =
-  employeesSlice.actions;
+export const {} = employeesSlice.actions;

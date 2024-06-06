@@ -1,7 +1,7 @@
 import Employee from './Employee';
 
 interface EmployeesState {
-  employees: Employee[];
+  employeesList: Employee[];
   favorites: Employee[];
   isLoading: boolean;
   errorMessage: string;

@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Home from './pages/home/Home';
 import Navbar from './components/Navbar';
 import { Box } from '@mui/material';
+import { useDispatch } from 'react-redux';
+import { AppDispatch } from './redux/store/store';
+import { fetchEmployees } from './redux/thunks/fetchEmployees';
 
 interface AppProps {
   // define your props here
 }
 
 const App: React.FC<AppProps> = () => {
+  const dispatch: AppDispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchEmployees());
+  }, []);
+
   return (
     <>
       <Navbar />
