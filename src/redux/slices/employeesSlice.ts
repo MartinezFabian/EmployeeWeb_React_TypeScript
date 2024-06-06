@@ -5,7 +5,9 @@ import { fetchEmployees } from '../thunks/fetchEmployees';
 
 const initialState: EmployeesState = {
   employeesList: [],
-  favorites: [],
+  favorites: localStorage.getItem('favorites')
+    ? (JSON.parse(localStorage.getItem('favorites')!) as Employee[])
+    : ([] as Employee[]),
   isLoading: false,
   errorMessage: '',
 };
@@ -22,6 +24,8 @@ export const employeesSlice = createSlice({
         // add to favorites
         state.favorites.push(action.payload);
       }
+
+      localStorage.setItem('favorites', JSON.stringify(state.favorites));
     },
   },
   extraReducers: (builder) => {
