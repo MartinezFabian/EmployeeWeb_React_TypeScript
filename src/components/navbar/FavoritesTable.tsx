@@ -8,6 +8,7 @@ import Employee from '../../models/Employee';
 import { toggleFavorites } from '../../redux/slices/employeesSlice';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
+import { GRID_DEFAULT_LOCALE_TEXT_ES } from '../../utilities/GRID_DEFAULT_LOCALE_TEXT_ES';
 
 interface FavoritesTableProps {
   // define your props here
@@ -62,6 +63,7 @@ const FavoritesTable: React.FC<FavoritesTableProps> = () => {
       }}
       pageSizeOptions={[8]}
       getRowId={(row) => row.id}
+      localeText={GRID_DEFAULT_LOCALE_TEXT_ES}
     />
   );
 };
