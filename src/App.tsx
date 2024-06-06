@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Home from './pages/home/Home';
-import Navbar from './components/Navbar';
+import Navbar from './components/navbar/Navbar';
 import { Box } from '@mui/material';
 import { useDispatch } from 'react-redux';
 import { AppDispatch } from './redux/store/store';

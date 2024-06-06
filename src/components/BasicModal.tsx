@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 
 const style = {
@@ -9,19 +8,21 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
+  width: '90%',
+  maxWidth: '1200px',
+  height: 'auto',
   bgcolor: 'background.paper',
-  border: '2px solid #000',
   boxShadow: 24,
-  p: 4,
+  p: 2,
 };
 
 interface ModalProps {
   openModal: boolean;
   handleCloseModal: () => void;
+  children: React.ReactNode;
 }
 
-const BasicModal: React.FC<ModalProps> = ({ openModal, handleCloseModal }) => {
+const BasicModal: React.FC<ModalProps> = ({ openModal, handleCloseModal, children }) => {
   return (
     <>
       <Modal
@@ -30,14 +31,7 @@ const BasicModal: React.FC<ModalProps> = ({ openModal, handleCloseModal }) => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
-          </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-          </Typography>
-        </Box>
+        <Box sx={style}>{children}</Box>
       </Modal>
     </>
   );

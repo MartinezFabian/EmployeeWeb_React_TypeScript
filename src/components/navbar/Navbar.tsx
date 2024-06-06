@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { AppBar, Button, Toolbar, Typography } from '@mui/material';
-import BasicModal from './BasicModal';
+import BasicModal from '../BasicModal';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
+import FavoritesTable from './FavoritesTable';
 
 interface NavbarProps {
   // define your props here
@@ -38,7 +39,9 @@ const Navbar: React.FC<NavbarProps> = () => {
         </Toolbar>
       </AppBar>
 
-      <BasicModal openModal={openModal} handleCloseModal={handleCloseModal} />
+      <BasicModal openModal={openModal} handleCloseModal={handleCloseModal}>
+        <FavoritesTable />
+      </BasicModal>
     </>
   );
 };
