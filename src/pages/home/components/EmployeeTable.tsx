@@ -7,6 +7,7 @@ import { AppDispatch, RootState } from '../../../redux/store/store';
 import { toggleFavorites } from '../../../redux/slices/employeesSlice';
 import Employee from '../../../models/Employee';
 import { GRID_DEFAULT_LOCALE_TEXT_ES } from '../../../utilities/GRID_DEFAULT_LOCALE_TEXT_ES';
+import moment from 'moment';
 
 interface EmployeeTableProps {
   // define your props here
@@ -38,7 +39,14 @@ const EmployeeTable: React.FC<EmployeeTableProps> = () => {
     { field: 'firstName', headerName: 'Nombre', width: 130 },
     { field: 'position', headerName: 'Puesto', width: 130 },
     { field: 'department', headerName: 'Departamento', width: 200 },
-    { field: 'dateOfBirth', headerName: 'Fecha de Nacimiento', width: 180 },
+    {
+      field: 'dateOfBirth',
+      headerName: 'Fecha de Nacimiento',
+      width: 180,
+      valueFormatter: (value) => {
+        return moment.utc(value).format('DD/MM/YYYY');
+      },
+    },
     { field: 'contact', headerName: 'Contacto', width: 220 },
   ];
 

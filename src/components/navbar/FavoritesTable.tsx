@@ -9,6 +9,7 @@ import { toggleFavorites } from '../../redux/slices/employeesSlice';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { GRID_DEFAULT_LOCALE_TEXT_ES } from '../../utilities/GRID_DEFAULT_LOCALE_TEXT_ES';
+import moment from 'moment';
 
 interface FavoritesTableProps {
   // define your props here
@@ -42,7 +43,14 @@ const FavoritesTable: React.FC<FavoritesTableProps> = () => {
     { field: 'firstName', headerName: 'Nombre', width: 130 },
     { field: 'position', headerName: 'Puesto', width: 130 },
     { field: 'department', headerName: 'Departamento', width: 200 },
-    { field: 'dateOfBirth', headerName: 'Fecha de Nacimiento', width: 180 },
+    {
+      field: 'dateOfBirth',
+      headerName: 'Fecha de Nacimiento',
+      width: 180,
+      valueFormatter: (value) => {
+        return moment.utc(value).format('DD/MM/YYYY');
+      },
+    },
     { field: 'contact', headerName: 'Contacto', width: 220 },
   ];
 
