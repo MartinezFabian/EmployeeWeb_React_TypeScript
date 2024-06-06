@@ -14,7 +14,7 @@ export const AppTheme: FC<AppThemeProps> = ({ children }) => {
         contrastText: '#f1f1f1',
       },
       secondary: {
-        main: '#5df500',
+        main: '#7081d0',
       },
       background: {
         default: '#eeeeee',

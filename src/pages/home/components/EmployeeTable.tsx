@@ -37,8 +37,8 @@ const EmployeeTable: React.FC<EmployeeTableProps> = () => {
     { field: 'firstName', headerName: 'Nombre', width: 130 },
     { field: 'position', headerName: 'Puesto', width: 130 },
     { field: 'department', headerName: 'Departamento', width: 200 },
-    { field: 'dateOfBirth', headerName: 'Fecha de Nacimiento', width: 160 },
-    { field: 'contact', headerName: 'Contacto', width: 200 },
+    { field: 'dateOfBirth', headerName: 'Fecha de Nacimiento', width: 180 },
+    { field: 'contact', headerName: 'Contacto', width: 220 },
   ];
 
   return (
