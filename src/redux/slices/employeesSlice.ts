@@ -13,7 +13,17 @@ const initialState: EmployeesState = {
 export const employeesSlice = createSlice({
   name: 'employees',
   initialState: initialState,
-  reducers: {},
+  reducers: {
+    toggleFavorites: (state, action: PayloadAction<Employee>) => {
+      if (state.favorites.find((employee) => employee.id === action.payload.id)) {
+        // remove from favorites
+        state.favorites = state.favorites.filter((favorite) => favorite.id !== action.payload.id);
+      } else {
+        // add to favorites
+        state.favorites.push(action.payload);
+      }
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(fetchEmployees.pending, (state) => {
@@ -32,4 +42,4 @@ export const employeesSlice = createSlice({
   },
 });
 
-export const {} = employeesSlice.actions;
+export const { toggleFavorites } = employeesSlice.actions;
