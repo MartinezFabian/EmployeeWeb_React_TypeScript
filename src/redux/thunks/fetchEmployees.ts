@@ -8,7 +8,7 @@ export const fetchEmployees = createAsyncThunk<
 >(
   'employees/fetchEmployees', // Nombre del thunk
   async (_, thunkAPI) => {
-    const url = 'src/data/employees.json'; // Ruta a tu archivo JSON
+    const url = '/data/employees.json'; // Ruta a tu archivo JSON
 
     try {
       const response = await fetch(url);
