@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AppBar, Button, Toolbar, Typography } from '@mui/material';
+import { AppBar, Button, Toolbar, Typography, useMediaQuery, useTheme } from '@mui/material';
 import BasicModal from '../BasicModal';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
 import FavoritesTable from './FavoritesTable';
@@ -14,12 +14,17 @@ const Navbar: React.FC<NavbarProps> = () => {
   const handleOpenModal = () => setOpenModal(true);
   const handleCloseModal = () => setOpenModal(false);
 
+  // MUI Responsive
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+
   return (
     <>
       <AppBar position="static">
         <Toolbar
           sx={{
-            margin: '0 40px',
+            margin: isSmallScreen ? '0' : '0 60px',
+
             display: 'flex',
             justifyContent: 'space-between',
           }}
@@ -29,6 +34,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           </Typography>
 
           <Button
+            size="small"
             color="secondary"
             onClick={handleOpenModal}
             variant="contained"

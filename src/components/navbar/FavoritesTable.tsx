@@ -41,7 +41,7 @@ const FavoritesTable: React.FC<FavoritesTableProps> = () => {
     },
     { field: 'lastName', headerName: 'Apellido', width: 130 },
     { field: 'firstName', headerName: 'Nombre', width: 130 },
-    { field: 'position', headerName: 'Puesto', width: 130 },
+    { field: 'position', headerName: 'Puesto', width: 200 },
     { field: 'department', headerName: 'Departamento', width: 200 },
     {
       field: 'dateOfBirth',
