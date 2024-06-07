@@ -178,5 +178,185 @@
     "department": "Departamento de Diseño",
     "dateOfBirth": "1989-09-28",
     "contact": "isabel.suarez@mail.com"
+  },
+  {
+    "id": "21",
+    "lastName": "Hernández",
+    "firstName": "Roberto",
+    "position": "Analista de Datos",
+    "department": "Departamento de Inteligencia de Negocios",
+    "dateOfBirth": "1986-08-25",
+    "contact": "roberto.hernandez@mail.com"
+  },
+  {
+    "id": "22",
+    "lastName": "González",
+    "firstName": "Silvia",
+    "position": "Ingeniera de Software",
+    "department": "Departamento de Desarrollo",
+    "dateOfBirth": "1991-02-15",
+    "contact": "silvia.gonzalez@mail.com"
+  },
+  {
+    "id": "23",
+    "lastName": "Dominguez",
+    "firstName": "Eduardo",
+    "position": "Analista de Seguridad",
+    "department": "Departamento de TI",
+    "dateOfBirth": "1989-11-03",
+    "contact": "eduardo.dominguez@mail.com"
+  },
+  {
+    "id": "24",
+    "lastName": "Martín",
+    "firstName": "Beatriz",
+    "position": "Diseñadora Gráfica",
+    "department": "Departamento de Diseño",
+    "dateOfBirth": "1993-05-12",
+    "contact": "beatriz.martin@mail.com"
+  },
+  {
+    "id": "25",
+    "lastName": "Ruiz",
+    "firstName": "Javier",
+    "position": "Analista Financiero",
+    "department": "Departamento de Finanzas",
+    "dateOfBirth": "1987-10-08",
+    "contact": "javier.ruiz@mail.com"
+  },
+  {
+    "id": "26",
+    "lastName": "Alvarez",
+    "firstName": "Cristina",
+    "position": "Especialista en Recursos Humanos",
+    "department": "Recursos Humanos",
+    "dateOfBirth": "1990-04-20",
+    "contact": "cristina.alvarez@mail.com"
+  },
+  {
+    "id": "27",
+    "lastName": "Romero",
+    "firstName": "Andrea",
+    "position": "Analista de Marketing",
+    "department": "Departamento de Marketing",
+    "dateOfBirth": "1984-07-17",
+    "contact": "andrea.romero@mail.com"
+  },
+  {
+    "id": "28",
+    "lastName": "Sosa",
+    "firstName": "Francisco",
+    "position": "Especialista en Soporte Técnico",
+    "department": "Departamento de Soporte",
+    "dateOfBirth": "1988-03-29",
+    "contact": "francisco.sosa@mail.com"
+  },
+  {
+    "id": "29",
+    "lastName": "Giménez",
+    "firstName": "Marcela",
+    "position": "Analista de Negocios",
+    "department": "Departamento de Análisis de Negocios",
+    "dateOfBirth": "1992-09-14",
+    "contact": "marcela.gimenez@mail.com"
+  },
+  {
+    "id": "30",
+    "lastName": "Ortega",
+    "firstName": "Gustavo",
+    "position": "Especialista en Logística",
+    "department": "Departamento de Logística",
+    "dateOfBirth": "1986-12-28",
+    "contact": "gustavo.ortega@mail.com"
+  },
+  {
+    "id": "31",
+    "lastName": "Moreno",
+    "firstName": "Natalia",
+    "position": "Analista de Calidad",
+    "department": "Departamento de Control de Calidad",
+    "dateOfBirth": "1991-06-19",
+    "contact": "natalia.moreno@mail.com"
+  },
+  {
+    "id": "32",
+    "lastName": "Torres",
+    "firstName": "Emilio",
+    "position": "Especialista en Compras",
+    "department": "Departamento de Compras",
+    "dateOfBirth": "1985-01-31",
+    "contact": "emilio.torres@mail.com"
+  },
+  {
+    "id": "33",
+    "lastName": "Prieto",
+    "firstName": "Ana",
+    "position": "Analista de Datos",
+    "department": "Departamento de Inteligencia de Negocios",
+    "dateOfBirth": "1989-04-23",
+    "contact": "ana.prieto@mail.com"
+  },
+  {
+    "id": "34",
+    "lastName": "Sanchez",
+    "firstName": "Diego",
+    "position": "Desarrollador Frontend",
+    "department": "Departamento de Desarrollo",
+    "dateOfBirth": "1993-08-02",
+    "contact": "diego.sanchez@mail.com"
+  },
+  {
+    "id": "35",
+    "lastName": "Gutiérrez",
+    "firstName": "Laura",
+    "position": "Especialista en Finanzas",
+    "department": "Departamento de Finanzas",
+    "dateOfBirth": "1987-11-09",
+    "contact": "laura.gutierrez@mail.com"
+  },
+  {
+    "id": "36",
+    "lastName": "Muñoz",
+    "firstName": "Pedro",
+    "position": "Analista de Sistemas",
+    "department": "Departamento de TI",
+    "dateOfBirth": "1992-03-16",
+    "contact": "pedro.munoz@mail.com"
+  },
+  {
+    "id": "37",
+    "lastName": "López",
+    "firstName": "Carolina",
+    "position": "Diseñadora UX/UI",
+    "department": "Departamento de Diseño",
+    "dateOfBirth": "1988-06-27",
+    "contact": "carolina.lopez@mail.com"
+  },
+  {
+    "id": "38",
+    "lastName": "Castillo",
+    "firstName": "Javier",
+    "position": "Analista de Datos",
+    "department": "Departamento de Inteligencia de Negocios",
+    "dateOfBirth": "1993-10-18",
+    "contact": "javier.castillo@mail.com"
+  },
+  {
+    "id": "39",
+    "lastName": "Vázquez",
+    "firstName": "Sara",
+    "position": "Especialista en Recursos Humanos",
+    "department": "Recursos Humanos",
+    "dateOfBirth": "1986-12-04",
+    "contact": "sara.vazquez@mail.com"
+  },
+  {
+    "id": "40",
+    "lastName": "Fuentes",
+    "firstName": "Juan",
+    "position": "Desarrollador Backend",
+    "department": "Departamento de Desarrollo",
+    "dateOfBirth": "1991-05-22",
+    "contact": "juan.fuentes@mail.com"
   }
 ]
