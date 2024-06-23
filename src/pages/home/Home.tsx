@@ -1,16 +1,10 @@
-import React from 'react';
+import { Alert, CircularProgress, Grid, Typography } from '@mui/material';
 
 import EmployeeTable from './components/EmployeeTable.tsx';
-import { Alert, CircularProgress, Grid, Typography } from '@mui/material';
-import { useSelector } from 'react-redux';
-import { RootState } from '../../redux/store/store.ts';
+import { useAppSelector } from '../../redux/store/store.ts';
 
-interface HomeProps {
-  // define your props here
-}
-
-const Home: React.FC<HomeProps> = () => {
-  const { isLoading, errorMessage } = useSelector((state: RootState) => state.employees);
+const Home = () => {
+  const { isLoading, errorMessage } = useAppSelector((state) => state.employees);
 
   return (
     <>

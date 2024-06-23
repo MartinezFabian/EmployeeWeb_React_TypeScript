@@ -1,14 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { AppBar, Button, Toolbar, Typography, useMediaQuery, useTheme } from '@mui/material';
-import BasicModal from '../BasicModal';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
+
+import BasicModal from '../BasicModal';
 import FavoritesTable from './FavoritesTable';
 
-interface NavbarProps {
-  // define your props here
-}
-
-const Navbar: React.FC<NavbarProps> = () => {
+const Navbar = () => {
   const [openModal, setOpenModal] = useState<boolean>(false);
 
   const handleOpenModal = () => setOpenModal(true);

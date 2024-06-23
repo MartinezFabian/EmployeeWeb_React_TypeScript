@@ -24,8 +24,6 @@ export const employeesSlice = createSlice({
         // add to favorites
         state.favorites.push(action.payload);
       }
-
-      localStorage.setItem('favorites', JSON.stringify(state.favorites));
     },
   },
   extraReducers: (builder) => {

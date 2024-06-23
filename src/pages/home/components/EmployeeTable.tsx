@@ -1,21 +1,15 @@
-import React from 'react';
-
 import { DataGrid, GridColDef, GridRenderCellParams } from '@mui/x-data-grid';
 import { Checkbox } from '@mui/material';
-import { useDispatch, useSelector } from 'react-redux';
-import { AppDispatch, RootState } from '../../../redux/store/store';
+import moment from 'moment';
+
+import { useAppDispatch, useAppSelector } from '../../../redux/store/store';
 import { toggleFavorites } from '../../../redux/slices/employeesSlice';
 import Employee from '../../../models/Employee';
 import { GRID_DEFAULT_LOCALE_TEXT_ES } from '../../../utilities/GRID_DEFAULT_LOCALE_TEXT_ES';
-import moment from 'moment';
 
-interface EmployeeTableProps {
-  // define your props here
-}
-
-const EmployeeTable: React.FC<EmployeeTableProps> = () => {
-  const { employeesList, favorites } = useSelector((state: RootState) => state.employees);
-  const dispatch: AppDispatch = useDispatch();
+const EmployeeTable = () => {
+  const { employeesList, favorites } = useAppSelector((state) => state.employees);
+  const dispatch = useAppDispatch();
 
   const onChangeCheckbox = (employee: Employee) => {
     dispatch(toggleFavorites(employee));

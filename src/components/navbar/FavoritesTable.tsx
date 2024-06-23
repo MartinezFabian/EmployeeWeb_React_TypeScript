@@ -1,23 +1,16 @@
-import React from 'react';
-
 import { DataGrid, GridColDef, GridRenderCellParams } from '@mui/x-data-grid';
-
-import { useDispatch, useSelector } from 'react-redux';
-import { AppDispatch, RootState } from '../../redux/store/store';
-import Employee from '../../models/Employee';
-import { toggleFavorites } from '../../redux/slices/employeesSlice';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
-import { GRID_DEFAULT_LOCALE_TEXT_ES } from '../../utilities/GRID_DEFAULT_LOCALE_TEXT_ES';
 import moment from 'moment';
 
-interface FavoritesTableProps {
-  // define your props here
-}
+import { useAppDispatch, useAppSelector } from '../../redux/store/store';
+import Employee from '../../models/Employee';
+import { toggleFavorites } from '../../redux/slices/employeesSlice';
+import { GRID_DEFAULT_LOCALE_TEXT_ES } from '../../utilities/GRID_DEFAULT_LOCALE_TEXT_ES';
 
-const FavoritesTable: React.FC<FavoritesTableProps> = () => {
-  const { favorites } = useSelector((state: RootState) => state.employees);
-  const dispatch: AppDispatch = useDispatch();
+const FavoritesTable = () => {
+  const { favorites } = useAppSelector((state) => state.employees);
+  const dispatch = useAppDispatch();
 
   const onChangeCheckbox = (employee: Employee) => {
     dispatch(toggleFavorites(employee));
